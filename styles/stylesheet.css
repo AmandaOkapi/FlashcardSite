@@ -1,0 +1,446 @@
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+background-color: #eee8d5;
+margin: 0;
+padding: 0;
+}
+
+.title-bar {
+  background-color: #333;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color:#dfd4b1 ;
+}
+
+.title {
+  margin: 0;
+  text-align: left;
+  font-family: 'Carter One', cursive;
+  font-size: 35px;
+  color: #454545;
+  background: none;
+  border: none;
+}
+
+.main-input{
+    display: block;
+    width: 500px;
+    height: 200px;
+    margin:auto;
+    text-align: left;
+    margin-bottom: 2px;
+    background-color: #f5f5f5;
+    border-color: #454545;
+    padding: 0%;
+    margin: 0%;
+    margin-left: 750px;
+    
+    
+}
+.submit-button{
+    display: block; 
+    margin:auto;
+    cursor: pointer;
+    height: 50px;
+    width: 80px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    background-color: #d5dbee;
+    margin-left: 963px;
+    margin-bottom: 20px;
+}
+.submit-button:hover{
+  box-shadow: 1px 4px 3px rgba(0, 0, 0, 0.2);
+}
+.start-button{
+    display:block;
+    background-color: #eed5db;
+    height: 50px;
+    width:1200px;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+    margin:auto;
+    padding: auto;
+    margin-left: 400px;
+    font-size: 20px;
+    font-family: 'Carter One', cursive;
+    color: #454545;
+    border-color: #454545;
+}
+.start-button:hover{
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.2);
+
+}
+
+.splitter-input{
+    display: inline-block;
+    resize: none;
+    width: 40px;
+    
+}
+.flashcard-grid{
+    display: grid;
+    grid-template-columns: 2000px;
+    column-gap: 20px;
+    row-gap: 35px;
+    align-items: center;
+    place-items: center;
+    border-color: #454545;
+    border-width: 2px;
+
+}
+.flashcard-style{
+    height: 150px;
+    width: 500px;
+    border: 1px solid gray;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    margin-right: 30px;
+    margin-top: 15px;
+    transition: box-shadow 0.2s;
+    cursor: text;
+    resize: none;
+    text-align: left;
+    padding: 0%;
+    vertical-align: middle;
+    border-radius: 8px;
+    background-color: #fdf6e3;
+
+    font-family:'Ubuntu', sans-serif;
+    font-size: min(20px, 4vw); /* Adjust the values as per your requirements */
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    justify-content: center;
+}
+.flashcard-style:hover{
+    box-shadow: 1px 4px 3px rgba(0, 0, 0, 0.2);
+}
+
+.text-flashcard-style{
+    height: 100px;
+    width: 500px;
+    border: 1px solid gray;
+    font-size: 16px;
+    display: inline-flex;
+    text-align: left;
+    resize: none;
+}
+
+
+
+
+.fixed-button {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 9999;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 45px 30px;
+    border: 1px solid #000000; /* Add border styles here */
+    border-radius: 70px;
+    cursor: pointer;
+  }
+
+  .card-container{
+    margin-bottom: 20px;
+  }
+  .adder-button{
+    display:block;
+    background-color: #d5eee8;
+    height: 30px;
+    width:1200px;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+    transition: height 0.2s;
+    font-size: 20px;
+    font-weight: 3px;
+  }
+  .adder-button:hover{
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.2);
+    height: 35px;
+  }
+
+  .delete-button{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    vertical-align: bottom;
+    cursor: pointer;
+    font-size: 20px;
+    transition: box-shadow 0.3s;
+    transition: opacity 0.1s;
+    background-color: #d5dbee;
+
+  }
+  .delete-button:hover{
+    opacity:0.7;
+
+  }
+
+  .swap-button{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    vertical-align: bottom;
+    cursor: pointer;
+    font-size: 20px;
+    margin-right: 30px;
+    transition: opacity 0.1s;
+    background-color: #d5dbee;
+  }
+  .swap-button:hover{
+    opacity:0.7;
+  }
+
+
+
+.flashcardDisplay-style{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  justify-content: center;
+
+}
+.flashcard{
+
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  resize: none;
+  text-align: left;
+  padding: 0%;
+  vertical-align: middle;
+
+
+  height: 450px;
+  width: 1000px;
+  font-family:'Ubuntu', sans-serif;
+
+
+  text-overflow: ellipsis;
+
+
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, supported by most modern browsers */
+
+  perspective: 1000px;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+
+.flashcard .front,
+.flashcard .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flashcard .front {
+  border: 1px solid gray;
+  border-radius: 8px;
+  background-color: #fdf6e3;
+}
+
+.flashcard .back {
+  border: 1px solid gray;
+  border-radius: 8px;
+  background-color: #e9e3d0;
+  transform: rotateX(180deg);
+}
+
+.flashcard.flipped .card-inner {
+  transform: rotateX(180deg);
+}
+
+
+
+.flashcard .star {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #fdf6e3;
+  font-size: 40px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  text-stroke-width: 1px;
+  text-stroke-color: black;
+
+
+}
+
+.flashcard .star:hover{
+  -webkit-text-stroke-width: 2.5px;
+  -webkit-text-stroke-color: black;
+  text-stroke-width: 2.5px;
+  color: #FFD700;
+}
+
+
+.confetti {
+  position: absolute;
+  width: 10px;
+  height: 20px;
+  background-color: transparent;
+  animation: confetti-fall 5s;
+  z-index: 1;
+}
+
+@keyframes confetti-fall {
+  0% {
+    transform: translate(0, -100vh) rotate(0deg);
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(calc(100vw * var(--translate-x)), calc(100vh * var(--translate-y))) rotate(calc(720deg * var(--rotation)));
+    opacity: 0;
+  }
+}
+
+.cardtext{
+  text-align: center;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.image-leftb{
+background-image:url("leftarrow.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+height: 45px;
+width: 45px;
+margin: 5px;
+margin-bottom: 0px;
+}
+.image-leftb:hover{
+  opacity: 0.8;
+}
+
+.image-rightb{
+  background-image:url("rightarrow.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 45px;
+  width: 45px;
+  margin: 5px;
+  margin-bottom: 0px;
+}
+.image-rightb:hover{
+  opacity: 0.8;
+}
+
+.image-shuffleb{
+  background-image: url("shuffle.jpg");  
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 45px;
+  width: 45px;
+  margin: 5px;
+  margin-bottom: 0px;
+}
+.image-shuffleb:hover{
+  opacity: 0.8;
+}
+
+.image-switchb{
+  background-image: url("switch.jpg");  
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 45px;
+  width: 45px;
+  margin: 5px;
+  margin-bottom: 0px;
+}
+.image-switchb:hover{
+  opacity: 0.8;
+}
+
+.image-starb{
+  background-image: url("star.jpg");  
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 50px;
+  width: 50px;
+}
+.image-starb:hover{
+  opacity: 0.8;
+}
+
+.resultsContainer{
+  width: 1000px;
+  height: 300px;
+  margin-top: 15px;
+  padding: 0%;
+  background-color: #d5dbee;
+  display: flex;
+  align-items: center;
+  }
+
+.circle{
+  background-color:#d5dbee;
+  height: 200px;
+  width: 200px;
+  margin-left: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.score{
+  font-family: 'Carter One', cursive;
+  color: #454545;
+  font-size: 50px
+}
+
+
+.review{
+  height: 40px;
+  background-color: #d5eee8;
+  margin-bottom: 10px;
+  margin-left: 150px;
+}
+.review:hover{
+  box-shadow: 1px 4px 3px rgba(0, 0, 0, 0.2);
+}
+.repeat{
+  background-color: #d5eee8;
+  margin-left: 150px;
+}
+.repeat:hover{
+  box-shadow: 1px 4px 3px rgba(0, 0, 0, 0.2);
+
+}
