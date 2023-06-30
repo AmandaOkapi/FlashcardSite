@@ -18,7 +18,7 @@ this.starred=0;
 window.onload = function() {
   var currentPage = window.location.href;
   
-  if (currentPage.includes('index.html')) {
+  if (currentPage.includes('index.html')  || currentPage.includes('?refresh=true'))  {
     console.log("Website 1 loaded!");
     flashcardArray[0]= new flashcard('Question', 'Answer');
     resetGrid();
